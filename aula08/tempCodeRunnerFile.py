@@ -1,9 +1,8 @@
-notas = []
-contador = 0
+numeros = []
 
-while contador <= 3:
-    contador += 1
-    nota = int(input(f'Nota da prova matricula #{contador}: '))
-    notas.append(nota)
+for i in range(15):
+    numero = int(input('Insira o numero: '))
+    numeros.append(numero)
 
-print(f'Boletim de notas: {sorted(notas)}')
+conjunto = set(numeros)
+print(conjunto)
